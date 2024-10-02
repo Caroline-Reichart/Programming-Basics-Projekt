@@ -28,7 +28,7 @@ class Game {
             
         ));
 
-        // Szene 1 .
+        // Szene 1
         this.scenes.push(new Scene(
             "Es ist eine kalte, dunkle Nacht in den Bergen um Durmstrang. Du erwachst aus einem Traum, in dem dir die drei Relikte erschienen sind. Eine uralte, tiefe Stimme hat dir zugeflüstert, dass die Zeit knapp wird. Unruhig setzt du dich auf und spürst, dass deine Reise beginnt.",
             [
@@ -137,8 +137,8 @@ class Game {
         this.scenes.push(new Scene(
             "Die Prophezeiung hat sich erfüllt, und die Macht der Relikte liegt nun in deinen Händen. Doch mit dieser Macht kommt auch eine Verantwortung, die du niemals erwartet hättest. Die Dunkelheit rückt näher, und die Zukunft der magischen Welt hängt an einem seidenen Faden. Dein Abenteuer ist noch lange nicht vorbei...",
             [],
-            "images/scene10-background.jpg",
-            "images/scene10-option.jpg"
+            "/images/scene10-background.jpg",
+            
         ));
 
         // Weitere Szenen müssen hier hinzugefügt werden, gemäß Storyscript

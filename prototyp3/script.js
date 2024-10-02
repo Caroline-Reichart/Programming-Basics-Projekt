@@ -28,7 +28,7 @@ class Game {
             
         ));
 
-        // Szene 1
+        // Szene 1: der erste Hinweis
         this.scenes.push(new Scene(
             "Es ist eine kalte, dunkle Nacht in den Bergen um Durmstrang. Du erwachst aus einem Traum, in dem dir die drei Relikte erschienen sind. Eine uralte, tiefe Stimme hat dir zugeflüstert, dass die Zeit knapp wird. Unruhig setzt du dich auf und spürst, dass deine Reise beginnt.",
             [

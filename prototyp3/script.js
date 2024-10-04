@@ -1,11 +1,10 @@
 // Szenen-Objekt
 class Scene {
-    constructor(text, options = [], backgroundImg = "", sceneImg = "") {
+    constructor(text, options = [], backgroundImg = "") {
         this.text = text;
         this.options = options;
         this.backgroundImg = backgroundImg;
-        this.sceneImg = sceneImg;
-    }
+     }
 }
 
 // Spielzustand verwalten

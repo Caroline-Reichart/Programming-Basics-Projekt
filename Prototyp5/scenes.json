@@ -1,7 +1,7 @@
 {
     "scenes": [
       {
-        "id": 0,
+        "id": 0, 
         "text": "In den Bergen um Durmstrang, verborgen in Dunkelheit und Nebel, ranken sich Gerüchte über die mächtigsten Relikte, die je existiert haben: der Schattenstein, der Seelenspiegel und der Zeitweber. Diese Artefakte könnten den Verlauf der magischen Welt verändern. Eine Prophezeiung warnt jedoch, dass ihre Macht nur Unheil bringt, wenn sie in die falschen Hände gelangen.<br><br> Du bist Lukas Roskow, ein Schüler an der magischen Schule von Durmstrang, der eines Nachts einen beunruhigenden Traum hat. Darin erscheinen dir die Relikte, ein Labyrinth und eine uralte Stimme, die dich warnt: <i>'Die Zeit läuft aus, die Dunkelheit kommt...'</i>",
         "options": [
           {
@@ -20,13 +20,14 @@
             "nextScene": 2
           },
           {
-            "text": "Begib dich in die Bibliothek.",
+            "text": "Begib dich in die Bibliothek, um mehr über die Relikte zu erfahren.",
             "nextScene": 3
           },
           {
-            "text": "Geh zum Hausgeist von Durmstrang.",
+            "text": "Geh zum Hausgeist von Durmstrang, der angeblich viele Geheimnisse über die Relikte kennt.",
             "nextScene": 4
-          }
+          },
+          "Szene 1: Der erste Hinweis"
         ],
         "backgroundImg": "/images/scene1-background.png"
       },
@@ -39,14 +40,16 @@
             "nextScene": 5
           },
           {
-            "text": "Lehne ab und versuche, allein mehr herauszufinden.",
+            "text": "Lehne ab und versuche, allein mehr herauszufinden, um Levi zu schützen.",
             "nextScene": 6
           },
           {
             "text": "Gehe zu Professor Korvin, dem Experten für dunkle Magie.",
             "nextScene": 7
-          }
-        ]
+          },
+          "Option 1.1: Levi wecken"
+        ],
+        "backgroundImg": "/images/scene2-background.png"
       },
       {
         "id": 3,
@@ -60,7 +63,8 @@
             "text": "Untersuche das Buch genauer, um mehr Hinweise zu finden.",
             "nextScene": 8
           }
-        ]
+        ],
+        "backgroundImg": "/images/scene3-background.png"
       },
       {
         "id": 4,
@@ -74,7 +78,8 @@
             "text": "Verabschiede dich und gehe zurück, um Levi von der Begegnung zu berichten.",
             "nextScene": 2
           }
-        ]
+        ],
+        "backgroundImg": "/images/scene4-background.png"
       },
       {
         "id": 5,
@@ -89,10 +94,12 @@
             "nextScene": 9
           },
           {
-            "text": "Untersuche die Katakomben weiter.",
+            "text": "Untersuche die Katakomben weiter, um einen anderen Weg zu finden.",
             "nextScene": 10
-          }
-        ]
+          },
+          "Szene 2: Die Katakomben von Durmstrang"
+        ],
+        "backgroundImg": "/images/scene5-background.png"
       },
       {
         "id": 6,
@@ -102,7 +109,8 @@
             "text": "Kehr zu Levi zurück und bitte ihn um Hilfe.",
             "nextScene": 2
           }
-        ]
+        ],
+        "backgroundImg": "/images/scene2-background.png"
       },
       {
         "id": 7,
@@ -116,7 +124,8 @@
             "text": "Ignoriere seine Warnung und setze deine Suche fort.",
             "nextScene": 5
           }
-        ]
+        ],
+        "backgroundImg": "/images/scene7-background.png"
       },
       {
         "id": 8,
@@ -148,7 +157,8 @@
             "text": "Warne Levi davor, sich dem Relikt zu nähern.",
             "nextScene": 13
           }
-        ]
+        ],
+        "backgroundImg": "/images/schattenstein.png"
       },
       {
         "id": 10,
@@ -158,7 +168,8 @@
             "text": "Folge der Passage.",
             "nextScene": 14
           }
-        ]
+        ],
+        "backgroundImg": "/images/runen entschlüsseln.png"
       },
       {
         "id": 11,
@@ -172,7 +183,8 @@
             "text": "Versuche, die Verbindung zu brechen.",
             "nextScene": 16
           }
-        ]
+        ],
+        "backgroundImg": "/images/schattenstein.png"
       },
       {
         "id": 12,
@@ -192,7 +204,8 @@
             "text": "Versuche, den Schattenstein zu versiegeln.",
             "nextScene": 18
           }
-        ]
+        ],
+        "backgroundImg": "/images/schattenstein.png"
       },
       {
         "id": 14,
@@ -202,7 +215,8 @@
             "text": "Geh weiter.",
             "nextScene": 19
           }
-        ]
+        ],
+        "backgroundImg": "/images/scene5-background.png"
       },
       {
         "id": 15,

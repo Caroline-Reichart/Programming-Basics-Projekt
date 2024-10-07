@@ -109,7 +109,7 @@
             "text": "Kehr zu Levi zurück und bitte ihn um Hilfe.",
             "nextScene": 2
           }
-        ],
+        ], 
         "backgroundImg": "/images/scene2-background.png"
       },
       {
@@ -118,10 +118,14 @@
         "options": [
           {
             "text": "Bitte ihn um Rat bei der Suche nach den Relikten.",
-            "nextScene": 11
+            "nextScene": 10
           },
           {
             "text": "Ignoriere seine Warnung und setze deine Suche fort.",
+            "nextScene": 5
+          },
+          {
+            "text": "Misstraue Korvin und gehe wieder.",
             "nextScene": 5
           }
         ],
@@ -143,19 +147,15 @@
       },
       {
         "id": 9,
-        "text": "Levi studiert die Runen genau. 'Diese Inschrift sagt: Der Schatten schützt das Relikt. Wir müssen uns in Schatten hüllen.' Levi murmelt einen Verschleierungszauber und die Tür öffnet sich. Hinter der Tür liegt ein dunkler, glänzender Stein – der Schattenstein.",
+        "text": "Levi studiert die Runen genau. 'Diese Inschrift sagt: Der Schatten schützt das Relikt. Wir müssen uns in Schatten hüllen.' Levi murmelt einen Verschleierungszauber. Langsam beginnt die Tür zu knarren, als sie sich öffnet. Hinter der Tür offenbart sich eine Kammer, die von unheimlichem blauen Licht erfüllt ist. In der Mitte der Kammer liegt ein blau leuchtenter Stein. Der Schattenstein, eines der Heiligen Relikte!",
         "options": [
           {
-            "text": "Greife sofort nach dem Schattenstein.",
+            "text": "Berühre den Schattenstein und nimm seine Macht an.",
             "nextScene": 11
           },
           {
             "text": "Untersuche die Umgebung auf Fallen oder Wächter.",
             "nextScene": 12
-          },
-          {
-            "text": "Warne Levi davor, sich dem Relikt zu nähern.",
-            "nextScene": 13
           }
         ],
         "backgroundImg": "/images/schattenstein.png"
@@ -173,60 +173,199 @@
       },
       {
         "id": 11,
-        "text": "Du berührst den Schattenstein und spürst, wie eine unheilvolle Macht durch dich strömt.",
+        "text": "Als du den Stein berührst, durchströmt dich eine kalte, fremde Macht. Du fühlst, wie deine Gedanken trüber werden und die Dunkelheit um dich herum dichter wird. Schatten beginnen, sich nach deinem Willen zu formen, doch mit dieser Macht kommt auch ein schwerer Preis. 'Du bist nun ein Diener der Dunkelheit' flüstert die Stimme. Plötzlich spürst du, wie du nicht mehr allein in deinem Kopf bist. Der Stein hat begonnen, dich zu beeinflussen.",
         "options": [
           {
             "text": "Akzeptiere die Macht des Schattensteins.",
             "nextScene": 15
           },
           {
-            "text": "Versuche, die Verbindung zu brechen.",
+            "text": "Versuche, die Verbindung zu brechen, bevor es zu spät ist.",
             "nextScene": 16
+          },
+          {
+            "text": "Fliehe mit dem Schattenstein und hoffe, dass du einen Weg findest, seine Macht zu kontrollieren."
           }
         ],
-        "backgroundImg": "/images/schattenstein.png"
+        "backgroundImg": "/images/Schattenstein.gif"
       },
       {
         "id": 12,
-        "text": "Du untersuchst die Umgebung und entdeckst eine uralte Falle, die den Schattenstein schützen soll.",
+        "text": "Nach deinem Abenteuer in den Katakomben entdeckst du Hinweise auf das zweite Relikt, den Seelenspiegel, der tief im verbotenen Wald verborgen liegt. Dieser Spiegel soll die tiefsten Geheimnisse und Ängste seiner Besitzer offenbaren. Du und Levi machen euch auf den Weg durch den dunklen Wald, begleitet von unheilvollem Rauschen der Bäume und seltsamen Geräuschen, die euch folgen. Plötzlich stehst du vor einer alten, verwitterten Hütte. Im Inneren spürst du eine magische Präsenz. Der Seelenspiegel wartet...",
         "options": [
           {
-            "text": "Entschärfe die Falle.",
-            "nextScene": 17
-          }
-        ]
+            "text": "Betritt die Hütte und stelle dich dem Spiegel.",
+            "nextScene": 0
+          },
+          {
+            "text": "Umgehe die Hütte und suche nach einer anderen Möglichkeit, den Spiegel zu finden.",
+            "nextScene": 0
+          },
+          "Szene 4: Der Seelenspiegel"
+        ],
+        "backgroundImg": "/images/seelenspiegel.png"
       },
       {
         "id": 13,
-        "text": "Du warnst Levi, dass etwas nicht stimmt. Er zieht sich zurück und gemeinsam untersucht ihr die Situation.",
+        "text": "Im Inneren der Hütte ist es still und düster. Der Seelenspiegel steht auf einem Podest, sein Glas ist schwarz wie die Nacht. Als du dich ihm näherst, beginnt der Spiegel zu leuchten. Plötzlich zeigt er ein Bild – es ist deine eigene Reflexion, doch sie spricht zu dir. 'Bist du bereit, dich deinem wahren Ich zu stellen?'",
         "options": [
           {
-            "text": "Versuche, den Schattenstein zu versiegeln.",
-            "nextScene": 18
-          }
+            "text": "Blicke in den Spiegel und stelle dich deiner Dunkelheit.",
+            "nextScene": 14
+          },
+          {
+            "text": "Zerschlage den Spiegel, bevor er dir zu viel zeigt.",
+            "nextScene": 0
+          },
+          {
+            "text": "Versuche, die Magie des Spiegels zu bannen, ohne hineinzuschauen.",
+            "nextScene": 0
+          },
+          "Szene 4: Der Spiegel"
         ],
-        "backgroundImg": "/images/schattenstein.png"
-      },
+        "backgroundImg": "/images/.png"
+        },
       {
         "id": 14,
-        "text": "Die Passage führt dich tiefer in die Katakomben. Du spürst, dass etwas Mächtiges auf dich wartet.",
+        "text": "Du blickst in den Seelenspiegel und siehst deine dunkelsten Ängste und Geheimnisse. Der Spiegel zeigt dir nicht nur deine Vergangenheit, sondern auch die potenzielle Zukunft, eine Version von dir, die von der Macht des Schattensteins korrumpiert wurde, und eine andere, in der du die Relikte nutzt, um die Welt zu retten. Levi beobachtet dich besorgt, während der Spiegel weiter Bilder zeigt. 'Du hast die Macht, das Schicksal zu ändern, aber jede Entscheidung hat ihren Preis.'",
         "options": [
           {
-            "text": "Geh weiter.",
-            "nextScene": 19
-          }
+            "text": "Vertraue deinem zukünftigen Selbst.",
+            "nextScene": 15
+          },
+          {
+            "text": "Versuche, einen Weg zu finden, ohne die Relikte die Welt zu verändern.",
+            "nextScene": 0
+          },
+          {
+            "text": "Verzweifle an deiner Zukunft und überlege, die Suche abzubrechen.",
+            "nextScene": 0
+          },
+          "Szene 5: Die Wahrheit enthüllt"
         ],
-        "backgroundImg": "/images/scene5-background.png"
+        "backgroundImg": "/images/.png"
       },
       {
         "id": 15,
-        "text": "Die Macht des Schattensteins nimmt dich vollkommen ein und du spürst, wie die Dunkelheit um dich herum wächst.",
+        "text": "Das letzte Relikt, der Zeitweber, ist das mächtigste Artefakt von allen. Es gibt Gerüchte, dass er tief in den Ruinen eines alten Schlosses im Norden versteckt liegt. Doch Korvin, der dunkle Magier, beginnt dich zu jagen. Du musst schnell handeln, bevor er das Relikt in die Hände bekommt.",
+        "options": [
+          {
+            "text": "Begib dich direkt zu den Ruinen und stelle dich Korvin.",
+            "nextScene": 14
+          },
+          {
+            "text": "Versuche, einen geheimen Weg in die Ruinen zu finden, um Korvin zu entkommen.",
+            "nextScene": 0
+          },
+          {
+            "text": "Suche nach Verbündeten, die dir im Kampf gegen Korvin helfen.",
+            "nextScene": 0
+          },
+          "Szene 6: Die Jagd nach dem Zeitweber"
+        ],
+        "backgroundImg": "/images/.png"
+      },
+      {
+        "id": 16,
+        "text": "Du entscheidest dich, Verbündete zu suchen. In den Hallen von Durmstrang gibt es andere Schüler, die sich gegen Korvins dunklen Einfluss wehren. Gemeinsam schmiedet ihr einen Plan, um Korvin in eine Falle zu locken.",
+        "options": [
+          {
+            "text": "Locke Korvin in eine Falle und besiege ihn mit vereinter Kraft.",
+            "nextScene": 0
+          },
+          {
+            "text": "Versuche, Korvin zu überlisten und den Zeitweber vor ihm zu stehlen.",
+            "nextScene": 0
+          },
+          {
+            "text": "Stelle dich Korvin direkt im Zweikampf.",
+            "nextScene": 17
+          },
+          "Option 6.3: Verbündete finden"
+        ],
+        "backgroundImg": "/images/verbündete.png"
+      },
+      {
+        "id": 17,
+        "text": "Der Moment ist gekommen, du stehst Korvin gegenüber. Der Kampf um den Zeitweber wird darüber entscheiden, wer die Kontrolle über das Schicksal der Welt hat. Korvin ist ein mächtiger Magier, aber du hast die Relikte, um dich zu verteidigen.",
+        "options": [
+          {
+            "text": "Nutze den Schattenstein, um Korvin in die Dunkelheit zu stürzen.",
+            "nextScene": 0
+          },
+          {
+            "text": "Verwende den Seelenspiegel, um Korvins wahre Absichten zu enthüllen.",
+            "nextScene": 0
+          },
+          {
+            "text": "Versuche, Korvin mit Worten zu überzeugen, das Relikt aufzugeben.",
+            "nextScene": 18
+          },
+          "Szene 7: Der Showdown"
+        ],
+        "backgroundImg": "/images/kampf.png"
+      },
+      {
+        "id": 18,
+        "text": "Du hast den Zeitweber erlangt. Seine Macht über Zeit und Raum liegt nun in deinen Händen. Doch die Verantwortung wiegt schwer. Du könntest alles ungeschehen machen, die gesamte Geschichte der magischen Welt umschreiben.",
+        "options": [
+          {
+            "text": "Nutze den Zeitweber, um die Vergangenheit zu ändern und Korvin zu stoppen.",
+            "nextScene": 0
+          },
+          {
+            "text": "Bewahre den Zeitweber und sichere seine Macht für die Zukunft.",
+            "nextScene": 0
+          },
+          {
+            "text": "Zerstöre den Zeitweber, um sicherzustellen, dass niemand seine Macht missbraucht.",
+            "nextScene": 19
+          },
+          "Szene 8: Die Macht des Zeitwebers"
+        ],
+        "backgroundImg": "/images/zeitweber.png"
+      },
+      {
+        "id": 19,
+        "text": "Die Relikte sind nun in deinem Besitz, und die Welt erwartet deine Entscheidung. Du könntest die Relikte nutzen, um ein neues Zeitalter zu schaffen, oder sie zerstören und den Kreislauf der Macht beenden. Doch mit großer Macht kommt immer ein schwerer Preis.",
+        "options": [
+          {
+            "text": "Zerstöre alle Relikte und beende ihre dunkle Herrschaft.",
+            "nextScene": 0
+          },
+          {
+            "text": "Nutze die Relikte, um ein neues Zeitalter des Friedens zu schaffen.",
+            "nextScene": 0
+          },
+          {
+            "text": "Bewahre die Relikte für dich selbst und strebe nach noch größerer Macht.",
+            "nextScene": 20
+          },
+          "Szene 9: Die Entscheidung"
+        ],
+        "backgroundImg": "/images/zeitweber.png"
+      },
+      {
+        "id": 20,
+        "text": "Egal welche Wahl du getroffen hast, eine dunkle Prophezeiung bleibt bestehen. Es gibt Hinweise, dass noch mächtigere Artefakte in der Welt existieren, Artefakte, die weit über die Relikte hinausgehen. Dein Abenteuer ist noch lange nicht zu Ende. 'Das Schicksal hat dich auserwählt, aber der Weg ist noch nicht vorüber. Dunkelheit und Licht stehen immer im Kampf und du bist das Zünglein an der Waage.'",
         "options": [
           {
             "text": "Setze die Reise mit der neuen Macht fort.",
-            "nextScene": 20
+            "nextScene": 21
+          },
+          "Szene 10: Die Prophezeiung"
+        ],
+        "backgroundImg": "/images/ende4.png"
+      },
+      {
+        "id": 21,
+        "text": "Fortsetzung folgt...",
+        "options": [
+          {
+            "text": "Setze die Reise mit der neuen Macht fort."
           }
-        ]
+        ],
+        "backgroundImg": "/images/ende.png"
       }
     ]
   }

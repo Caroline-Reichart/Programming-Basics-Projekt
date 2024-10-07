@@ -12,6 +12,7 @@
         "backgroundImg": "/images/intro-background.png"
       },
       {
+        "_comment": "Szene 1: Der erste Hinweis",
         "id": 1,
         "text": "Es ist eine kalte, dunkle Nacht in den Bergen um Durmstrang. Du erwachst aus einem Traum, in dem dir die drei Relikte erschienen sind. Eine uralte, tiefe Stimme hat dir zugeflüstert, dass die Zeit knapp wird. Unruhig setzt du dich auf und spürst, dass deine Reise beginnt.",
         "options": [
@@ -26,8 +27,7 @@
           {
             "text": "Geh zum Hausgeist von Durmstrang, der angeblich viele Geheimnisse über die Relikte kennt.",
             "nextScene": 4
-          },
-          "Szene 1: Der erste Hinweis"
+          }
         ],
         "backgroundImg": "/images/scene1-background.png"
       },
@@ -195,19 +195,15 @@
         "options": [
           {
             "text": "Betritt die Hütte und stelle dich dem Spiegel.",
-            "nextScene": 0
+            "nextScene": 13
           },
-          {
-            "text": "Umgehe die Hütte und suche nach einer anderen Möglichkeit, den Spiegel zu finden.",
-            "nextScene": 0
-          },
-          "Szene 4: Der Seelenspiegel"
+        "Szene 4: Der Seelenspiegel"
         ],
         "backgroundImg": "/images/seelenspiegel.png"
       },
       {
         "id": 13,
-        "text": "Im Inneren der Hütte ist es still und düster. Der Seelenspiegel steht auf einem Podest, sein Glas ist schwarz wie die Nacht. Als du dich ihm näherst, beginnt der Spiegel zu leuchten. Plötzlich zeigt er ein Bild – es ist deine eigene Reflexion, doch sie spricht zu dir. 'Bist du bereit, dich deinem wahren Ich zu stellen?'",
+        "text": "Im Inneren der Hütte ist es still und düster. Der Seelenspiegel steht auf einem Podest, sein Glas ist schwarz wie die Nacht. Als du dich ihm näherst, beginnt der Spiegel zu leuchten. Plötzlich zeigt er ein Bild, es ist deine eigene Reflexion, doch sie spricht zu dir. 'Bist du bereit, dich deinem wahren Ich zu stellen?'",
         "options": [
           {
             "text": "Blicke in den Spiegel und stelle dich deiner Dunkelheit.",
@@ -215,16 +211,35 @@
           },
           {
             "text": "Zerschlage den Spiegel, bevor er dir zu viel zeigt.",
-            "nextScene": 0
+            "nextScene": 13.1
           },
           {
             "text": "Versuche, die Magie des Spiegels zu bannen, ohne hineinzuschauen.",
-            "nextScene": 0
+            "nextScene": 13.2
           },
           "Szene 4: Der Spiegel"
         ],
         "backgroundImg": "/images/.png"
         },
+        {
+          "_comment": "Unterszene zu 13, alternativer Verlauf endet hier",
+          "id": 13.1,
+          "text": "Du zerschlägst den Spiegel. Die Scherben werden zu einem hellen Licht, die Macht des Seelenspiegels ist frei.",
+          "options": [],
+          "backgroundImg": "/images/.png"
+          },
+          {
+            "_comment": "Unterszene zu 13, alternativer Verlauf endet geht wieder zurück zu 13",
+            "id": 13.2,
+            "text": "Eure Bannsprüche versagen, dir bleibt nichts anderes übrig als dich dem Spiegel zu stellen.",
+            "options": [
+              {
+                "text": "Du musst dich dem Spiegel stellen",
+                "nextScene": 13
+              }
+            ],
+            "backgroundImg": "/images/.png"
+            },        
       {
         "id": 14,
         "text": "Du blickst in den Seelenspiegel und siehst deine dunkelsten Ängste und Geheimnisse. Der Spiegel zeigt dir nicht nur deine Vergangenheit, sondern auch die potenzielle Zukunft, eine Version von dir, die von der Macht des Schattensteins korrumpiert wurde, und eine andere, in der du die Relikte nutzt, um die Welt zu retten. Levi beobachtet dich besorgt, während der Spiegel weiter Bilder zeigt. 'Du hast die Macht, das Schicksal zu ändern, aber jede Entscheidung hat ihren Preis.'",
@@ -235,47 +250,66 @@
           },
           {
             "text": "Versuche, einen Weg zu finden, ohne die Relikte die Welt zu verändern.",
-            "nextScene": 0
+            "nextScene": 15
           },
           {
             "text": "Verzweifle an deiner Zukunft und überlege, die Suche abzubrechen.",
-            "nextScene": 0
+            "nextScene": 14.1
           },
           "Szene 5: Die Wahrheit enthüllt"
         ],
         "backgroundImg": "/images/.png"
       },
       {
+        "_comment": "Unterszene zu 14, alternativer Verlauf endet hier",
+        "id": 14.1,
+        "text": "Du hast die Suche abgerochen. Professor Korvin hat durch dich die Relikte gefunden und an sich genommen. Er wurde vom Schattenstein in die Dunkelheit gezogen. Die Welt wird in Dunkelheit versinken.",
+        "options": [],
+        "backgroundImg": "/images/.png"
+        },
+      {
         "id": 15,
         "text": "Das letzte Relikt, der Zeitweber, ist das mächtigste Artefakt von allen. Es gibt Gerüchte, dass er tief in den Ruinen eines alten Schlosses im Norden versteckt liegt. Doch Korvin, der dunkle Magier, beginnt dich zu jagen. Du musst schnell handeln, bevor er das Relikt in die Hände bekommt.",
         "options": [
           {
             "text": "Begib dich direkt zu den Ruinen und stelle dich Korvin.",
-            "nextScene": 14
+            "nextScene": 17
           },
           {
             "text": "Versuche, einen geheimen Weg in die Ruinen zu finden, um Korvin zu entkommen.",
-            "nextScene": 0
+            "nextScene": 15.1
           },
           {
             "text": "Suche nach Verbündeten, die dir im Kampf gegen Korvin helfen.",
-            "nextScene": 0
+            "nextScene": 16
           },
           "Szene 6: Die Jagd nach dem Zeitweber"
         ],
         "backgroundImg": "/images/.png"
       },
       {
+        "_comment": "Unterszene zu 15, alternativer Verlauf führt zu Szene 16",
+        "id": 15.1,
+        "text": "Du stellst fest das es keine Möglichkeit gibt die Ruinen unbemerkt zu erreichen. Du musst Verbündete finden um dich Korvin stellen zu können.",
+        "options": [
+          {
+            "text": "Suche nach Verbündeten, die dir im Kampf gegen Korvin helfen.",
+            "nextScene": 16
+          }
+        ],
+        "backgroundImg": "/images/.png"
+        },
+      {
         "id": 16,
         "text": "Du entscheidest dich, Verbündete zu suchen. In den Hallen von Durmstrang gibt es andere Schüler, die sich gegen Korvins dunklen Einfluss wehren. Gemeinsam schmiedet ihr einen Plan, um Korvin in eine Falle zu locken.",
         "options": [
           {
             "text": "Locke Korvin in eine Falle und besiege ihn mit vereinter Kraft.",
-            "nextScene": 0
+            "nextScene": 18
           },
           {
             "text": "Versuche, Korvin zu überlisten und den Zeitweber vor ihm zu stehlen.",
-            "nextScene": 0
+            "nextScene": 18
           },
           {
             "text": "Stelle dich Korvin direkt im Zweikampf.",
@@ -287,18 +321,18 @@
       },
       {
         "id": 17,
-        "text": "Der Moment ist gekommen, du stehst Korvin gegenüber. Der Kampf um den Zeitweber wird darüber entscheiden, wer die Kontrolle über das Schicksal der Welt hat. Korvin ist ein mächtiger Magier, aber du hast die Relikte, um dich zu verteidigen.",
+        "text": "Der Moment ist gekommen, du stehst Professor Korvin gegenüber. Der Kampf um den Zeitweber wird darüber entscheiden, wer die Kontrolle über das Schicksal der Welt hat. Korvin ist ein mächtiger Magier, aber du hast die Relikte, um dich zu verteidigen.",
         "options": [
           {
-            "text": "Nutze den Schattenstein, um Korvin in die Dunkelheit zu stürzen.",
+            "text": "Nutze die Kraft der Relikte im Kampf gegen Professor Korvin.",
+            "nextScene": 17.1
+          },
+          {
+            "text": "Verwende den Seelenspiegel, um Professor Korvins wahre Absichten zu enthüllen.",
             "nextScene": 0
           },
           {
-            "text": "Verwende den Seelenspiegel, um Korvins wahre Absichten zu enthüllen.",
-            "nextScene": 0
-          },
-          {
-            "text": "Versuche, Korvin mit Worten zu überzeugen, das Relikt aufzugeben.",
+            "text": "Versuche, Professor Korvin mit Worten zu überzeugen, das Relikt aufzugeben.",
             "nextScene": 18
           },
           "Szene 7: Der Showdown"
@@ -306,36 +340,84 @@
         "backgroundImg": "/images/kampf.png"
       },
       {
+        "_comment": "Unterszene zu 17, alternativer Verlauf endet hier",
+        "id": 17.1,
+        "text": "Die Relikte geben dir große Macht, obwohl Professor Korvin ein starker Zauberer ist kann er dir nicht lange stand halten, er verschwindet mit einem Portschlüssel...",
+        "options": [
+          {
+            "text": "Du kannst die Ruinen nun betreten...",
+            "nextScene": 18
+          }
+        ],
+        "backgroundImg": "/images/.png"
+        },
+        {
+          "_comment": "Unterszene zu 17, alternativer Verlauf endet hier",
+          "id": 17.2,
+          "text": "Du hältst Professor Korvin den Seelenspiegel vor, um sein wahres Inneres zu offenbaren. Er flüchtet mit einem Portschlüssel.",
+          "options": [
+            {
+              "text": "Du kannst die Ruinen nun betreten...",
+              "nextScene": 18
+            }
+          ],
+          "backgroundImg": "/images/.png"
+          },  
+      {
         "id": 18,
         "text": "Du hast den Zeitweber erlangt. Seine Macht über Zeit und Raum liegt nun in deinen Händen. Doch die Verantwortung wiegt schwer. Du könntest alles ungeschehen machen, die gesamte Geschichte der magischen Welt umschreiben.",
         "options": [
           {
             "text": "Nutze den Zeitweber, um die Vergangenheit zu ändern und Korvin zu stoppen.",
-            "nextScene": 0
+            "nextScene": 18.2
           },
           {
             "text": "Bewahre den Zeitweber und sichere seine Macht für die Zukunft.",
-            "nextScene": 0
+            "nextScene": 19
           },
           {
             "text": "Zerstöre den Zeitweber, um sicherzustellen, dass niemand seine Macht missbraucht.",
-            "nextScene": 19
+            "nextScene": 18.1
           },
           "Szene 8: Die Macht des Zeitwebers"
         ],
         "backgroundImg": "/images/zeitweber.png"
       },
       {
+        "_comment": "Unterszene zu 18, alternativer Verlauf geht zurück zum Anfang",
+        "id": 18.1,
+        "text": "Du versuchst den Zeitweber zu zerstören, aber etwas stimmt nicht... die Zeiger laufen rückwärts",
+        "options": [
+          {
+            "text": "...",
+            "nextScene": 1
+          }
+        ],
+        "backgroundImg": "/images/.png"
+        },
+        {
+          "_comment": "Unterszene zu 18, alternativer Verlauf geht zurück zum Anfang",
+          "id": 18.2,
+          "text": "Du versuchst die Vergangenheit zu ändern, um zu verhindern das Professor Korvin von den Relikten erfährt",
+          "options": [
+            {
+              "text": "die Zeiger laufen rückwärts, aber etwas stimmt nicht...",
+              "nextScene": 1
+            }
+          ],
+          "backgroundImg": "/images/.png"
+          },
+      {
         "id": 19,
         "text": "Die Relikte sind nun in deinem Besitz, und die Welt erwartet deine Entscheidung. Du könntest die Relikte nutzen, um ein neues Zeitalter zu schaffen, oder sie zerstören und den Kreislauf der Macht beenden. Doch mit großer Macht kommt immer ein schwerer Preis.",
         "options": [
           {
             "text": "Zerstöre alle Relikte und beende ihre dunkle Herrschaft.",
-            "nextScene": 0
+            "nextScene": 19.1
           },
           {
             "text": "Nutze die Relikte, um ein neues Zeitalter des Friedens zu schaffen.",
-            "nextScene": 0
+            "nextScene": 20
           },
           {
             "text": "Bewahre die Relikte für dich selbst und strebe nach noch größerer Macht.",
@@ -345,6 +427,18 @@
         ],
         "backgroundImg": "/images/zeitweber.png"
       },
+      {
+        "_comment": "Unterszene zu 19, alternativer Verlauf ...",
+        "id": 19.1,
+        "text": "Deine Idee die Relikte zu zerstören scheitert, du versuchst sie mit einem Bann zu belegen.",
+        "options": [
+          {
+            "text": "aber etwas stimmt nicht... die Zeiger laufen rückwärts",
+            "nextScene": 1
+          }
+        ],
+        "backgroundImg": "/images/.png"
+        },
       {
         "id": 20,
         "text": "Egal welche Wahl du getroffen hast, eine dunkle Prophezeiung bleibt bestehen. Es gibt Hinweise, dass noch mächtigere Artefakte in der Welt existieren, Artefakte, die weit über die Relikte hinausgehen. Dein Abenteuer ist noch lange nicht zu Ende. 'Das Schicksal hat dich auserwählt, aber der Weg ist noch nicht vorüber. Dunkelheit und Licht stehen immer im Kampf und du bist das Zünglein an der Waage.'",
